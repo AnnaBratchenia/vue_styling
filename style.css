@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  height: auto;
+  border: 2px solid rgba(0, 0, 0, 0.171);
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.action {
+  background-color: #078050;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 30px;
+  padding: 15px 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.btn {
+  width: 350px;
+  background-color: #ff0080;
+  color: white;
+  font-size: 25px;
+  margin: 20px 10px 20px 30px;
+  padding: 15px;
+  border: none;
+}
+.result {
+  background-color: #9cccb9;
+  color: black;
+  margin: 20px 30px;
+  padding: 15px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.input_style {
+  margin: 20px 30px 20px 0;
+  width: 200px;
+  font-size: 20px;
+}
+.input_style_main {
+  margin: 20px 30px;
+  height: 50px;
+  font-size: 20px;
+}
+.user1 {
+  background-color: aqua;
+  color: black;
+}
+.user2 {
+  background-color: blueviolet;
+  color: darkblue;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}

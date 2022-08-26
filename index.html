@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vue Styling</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h2 class="action">Vue Styling</h2>
+        <input class="input_style_main" type="text" v-model="inputValue" />
+        <p
+          class="result"
+          v-bind:class="{user1:classForStyleMe==='user1',
+          user2:classForStyleMe==='user2',
+          
+             hidden:hiddenClass, visible:visibleClass}"
+          v-on:click="addStyle"
+        >
+          Style me!
+        </p>
+        <div class="buttons">
+          <button class="btn" v-on:click="toggleClass()">
+            Toggle Paragraph
+          </button>
+          <input class="input_style" type="text" v-model="inputColorValue" />
+        </div>
+        <p
+          class="result"
+          v-on:click="addBackgroundColor()"
+          v-bind:style="styleForButton"
+        >
+          Style me inline!
+        </p>
+      </div>
+    </section>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
